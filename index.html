@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.agenda {
+			width: 100%;
+		}
+
+		.horas {
+			width: 10%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.horas__hr {
+			position: absolute;
+		}
+
+		.horas__hr--2 {
+			top: 150px;
+		}
+
+		.horas__hr--3 {
+			top: 300px;
+		}
+
+		.container {
+			position: relative;
+		}
+
+		.talk {
+			position: absolute;
+			height: 150px;
+			left: 10%;
+		}
+
+		.talk--1 {
+			background-color: aqua;
+			width: 30%;
+			height: 300px;
+		}
+
+		.talk--2 {
+			background-color: pink;
+			left: 40%;
+			width: 30%;
+		}
+
+		.talk--3 {
+			background-color: blueviolet;
+			left: 70%;
+			width: 30%;
+		}
+
+		.talk--4 {
+			background-color: steelblue;
+			left: 70%;
+			top: 150px;
+			width: 30%;
+		}
+
+		.talk--break {
+			background-color: lightcoral;
+			top: 300px;
+			width: 90%;
+		}
+
+		@media(max-width: 768px) {
+
+			.talk,
+			.horas__hr {
+				position: relative;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="agenda">
+		<div class="container">
+			<p class="horas__hr horas__hr--1">9:00</p>
+			<div class="talk talk--1">
+				<h1>Plática 1</h1>
+				<p>Descripción</p>
+			</div>
+			<div class="talk talk--2">
+				<h1>Plática 2</h1>
+				<p>Descripción</p>
+			</div>
+			<div class="talk talk--3">
+				<h1>Plática 3</h1>
+				<p>Descripción</p>
+			</div>
+			<p class="horas__hr horas__hr--2">10:00</p>
+			<div class="talk talk--4">
+				<h1>Plática 4</h1>
+				<p>Descripción</p>
+			</div>
+			<p class="horas__hr horas__hr--3">11:00</p>
+			<div class="talk talk--break">
+				<h1>Break</h1>
+				<p>Descripción</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
